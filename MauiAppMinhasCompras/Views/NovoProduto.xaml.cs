@@ -10,7 +10,7 @@ public partial class NovoProduto : ContentPage
 		InitializeComponent();
 	}
 
-    private async Task ToolbarItem_Clicked(object sender, EventArgs e)
+    private async void ToolbarItem_Clicked(object sender, EventArgs e)
     {
 		try 
 		{
@@ -30,4 +30,6 @@ public partial class NovoProduto : ContentPage
 			await DisplayAlert("Ops", ex.Message, "ok");
 		}
     }
+
+
 }
